@@ -1,0 +1,19 @@
+<div class="container text-center mt-5 col-lg-6 bg-light p-5">
+    <h1 for="">Counter</h1>
+    <h2>{{counter.value}}</h2>
+    <h2>{{counter.id}}</h2>
+    <div class="row">
+        <div class="col-lg-4 mt-4">
+            <button class="btn col-lg-4 col-12 btn-dark" (click)="resetButton()">Reset</button>
+        </div>
+        <div class="col-lg-4 mt-4">
+            <button class="btn col-lg-12 col-12 btn-success" (click)="increaseButton()">Increase</button>
+        </div>
+        <div class="col-lg-4 mt-4">
+            <button class="btn col-lg-12 col-12 btn-danger" (click)="decreaseButton()">Decrease</button>
+        </div>
+        <div class="col-lg-4 mt-4">
+            <button class="btn col-lg-4 col-12 btn-dark" (click)="delete()">Delete</button>
+        </div>
+    </div>
+</div>

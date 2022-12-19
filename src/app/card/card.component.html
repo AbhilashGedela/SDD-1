@@ -1,0 +1,17 @@
+<div class="row m-5">
+  <div class="col-lg-3">
+    <div class="card mb-3">
+      <div class="card-body text-center">
+        <img [src]="cardMember.avatar" alt="avatar"
+          class="rounded-circle img-fluid" style="width: 100px;">
+        <h5 class="my-3">{{cardMember.first_name + ' ' + cardMember.last_name}}</h5>
+        <h5 class="text-muted mb-1">{{cardMember.email}}</h5>
+        <h6 class="text-muted mb-4">{{cardMember.id}}</h6>
+        <div class="d-flex justify-content-center mb-2">
+          <button type="button" class="btn btn-primary" (click)="removeData(cardMember)">Remove</button>
+          <!-- <button type="button" class="btn btn-outline-primary ms-1" (click)="editDetails(person)">Edit</button>-->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,202 @@
+<!-- <div class="p-3">
+  <div>
+    <label for="">Price:</label>
+    <input type="text" placeholder="Enter Price" class="form-control" [(ngModel)]="inputMobilePrice" />
+  </div>
+  <div>
+    <button class="form-control btn btn-primary mt-3" (click)="onClickOutput($event)">Filter</button>
+  </div>
+  <div class="form-group">
+    <div class="row">
+      <div *ngFor="let mob of mobileSelection">
+        <div>
+          <div class="card m-3 col-xl-3" style="width: 11rem;">
+            <img style="width: 173px; height:180px" src='{{"assets/mobiles/" + mob.model}}' class="card-img-top"
+              alt="...">
+             <div class="card-body">
+              <h5 class="card-title">Brand:{{mob.brand}}</h5>
+              <p class="card-text">Storege:{{mob.storege}}</p>
+              <p class="card-text">Price:{{mob.price}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->
+<!-- 
+<div class="p-3 w-25 m-3 border border-primary">
+  <div class="row mb-3">
+    <label for="colFormLabelSm" class="col-sm-4 col-form-label col-form-label-sm">No Of Liters</label>
+    <div class="col-sm-10">
+      <input type="text" [(ngModel)]="inputData" class="form-control form-control" id="colFormLabelSm" placeholder="No of litres">
+    </div>
+  </div>
+  <div class="row mb-3">
+    <label for="colFormLabel" class="col-sm-4 col-form-label">Cost per Litre</label>
+    <div class="col-sm-10">
+      <input type="text" [(ngModel)]="secondInputData" class="form-control" id="colFormLabel" placeholder="Cost per Litre">
+    </div>
+  </div>
+  <div class="row">
+    <button type="button" class="btn btn-primary" (click)="onCalculate($event)">Calculate</button>
+    <div class="m-3 col-sm-10">
+      <label for="">Total:{{outPut}}</label>
+    </div>
+  </div>
+</div>
+
+<button class="btn btn-primary m-3" type="button" (click)="onClickAdd($event)">Add Details</button><br>
+<table class="table table-success table-striped border border-primary w-50 m-3">
+  <tr class="border border-primary">
+    <td style="border: 1px solid blue;">ID</td>
+    <td style="border: 1px solid blue;">No of litres</td>
+    <td style="border: 1px solid blue;">Cost per Litre</td>
+    <td style="border: 1px solid blue;">Total Cost</td>
+  </tr>
+  <tr *ngFor="let item of addDetails;index as i">
+    <td style="border: 1px solid blue;">{{i+1}}</td>
+    <td style="border: 1px solid blue;">{{item.Nolitres}}</td>
+    <td style="border: 1px solid blue;">{{item.CostperLitre}}</td>
+    <td style="border: 1px solid blue;">{{item.TotalCost}}</td>
+  </tr>
+</table> -->
+
+<!-- 25-11-2022 -->
+<!-- 
+<div class="border p-3" >
+  <form class="w-25">
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Email address</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Password</label>
+      <input type="password" class="form-control" id="exampleInputPassword1">
+    </div>
+    <div class="mb-3 form-check">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div> -->
+
+<!-- 
+<div class="border px-3 py-3">
+  <div class="row g-2">
+    <div class="col-xl-6">
+      <div class="card-body p-md-5 text-black">
+        <h3 class="mb-3">Profile Settings</h3>
+        <div class="row">
+          <div class="col-md-5 mb-4">
+            <div class="form-outline">
+              <label class="form-label" for="form3Example1m">First name</label>
+              <div class="form-group col-lg-10">
+                <input type="text" class="form-control" placeholder="First name" [(ngModel)]="inputFirstName" />
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="form-outline">
+              <label class="form-label" for="form3Example1n">Last name</label>
+              <div class="form-group col-lg-10">
+                <input type="text" class="form-control" placeholder="Last name" [(ngModel)]="inputLastName" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-3">
+          <label for="colFormLabelSm" class="col-sm-4 col-form-label col-form-label-sm">Mobile Number:</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control form-control" id="colFormLabelSm" placeholder="Mobile Number"
+              [(ngModel)]="inputMobileNumber" />
+          </div>
+        </div>
+        <div class="row mb-3">
+          <label for="colFormLabelSm" class="col-sm-4 col-form-label col-form-label-sm">Address Line 1:</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control form-control" id="colFormLabelSm" placeholder="Enter address Line 1"
+              [(ngModel)]="inputAddress1" />
+          </div>
+        </div>
+        <div class="row mb-3">
+          <label for="colFormLabelSm" class="col-sm-4 col-form-label col-form-label-sm">Address Line 2:</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control form-control" id="colFormLabelSm" placeholder="Enter address Line 2"
+              [(ngModel)]="inputAddress2" />
+          </div>
+        </div>
+        <div class="row mb-3">
+          <label for="colFormLabelSm" class="col-sm-4 col-form-label col-form-label-sm">Pin Code:</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control form-control" id="colFormLabelSm" placeholder="Pin Code"
+              [(ngModel)]="inputPin" />
+          </div>
+        </div>
+        <div class="row mb-3">
+          <label for="colFormLabelSm" class="col-sm-4 col-form-label col-form-label-sm">State</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control form-control" id="colFormLabelSm" placeholder="State"
+              [(ngModel)]="inputState" />
+          </div>
+        </div>
+        <div class="row mb-3">
+          <label for="colFormLabelSm" class="col-sm-4 col-form-label col-form-label-sm">Area</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control form-control" id="colFormLabelSm" placeholder="Area"
+              [(ngModel)]="inputArea" />
+          </div>
+        </div>
+        <div class="d-flex justify-content-left pt-3">
+          <button type="button" class="btn btn-warning btn-lg ms-1" (click)="onSubmit($event)">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row m-5" *ngFor="let form of submittedDetails">
+  <div class="col-lg-3">
+    <div class="card mb-3">
+      <div class="card-body text-center">
+        <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3.webp" alt="avatar"
+          class="rounded-circle img-fluid" style="width: 100px;">
+        <h5 class="my-3">{{form.inputFirstName}}{{form.inputLastName}}</h5>
+        <p class="text-muted mb-1">{{form.inputMobileNumber}}</p>
+        <p class="text-muted mb-4">{{form.inputState}}</p>
+        <div class="d-flex justify-content-center mb-2">
+          <button type="button" class="btn btn-primary" (click)="removeCard(form)">Remove</button>
+          <button type="button" class="btn btn-outline-primary ms-1">Edit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<!-- 11/12/2022 -->
+<div *ngFor="let countt of counters">
+<app-counter [counter]="countt" (deleted)="deleteItem($event)"></app-counter>
+</div>
+
+<div>
+  <button class="btn btn-primary m-4" (click)="addedCounter()">Add Counter</button>
+</div>
+
+<!-- 
+<div>
+  <app-form (passEmployeeData)="recieveData($event)"></app-form>
+</div> -->
+<!-- <div *ngFor="let person of employeeeData">
+  <app-card [cardMember]="person" (removeEmployeeData)="removeData($event)"></app-card>
+</div> -->
+
+<div *ngFor="let timers of watchTimer">
+  <app-timer [runTimer]="timers"></app-timer>
+</div>
+
+<div>
+  <button class="btn btn-primary m-4" (click)="addedTimer()">Add Timer</button>
+</div>
